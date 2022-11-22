@@ -33,8 +33,6 @@ final class NoteCell: UITableViewCell {
         textlabel.numberOfLines = 0
         textlabel.backgroundColor = .clear
         
-        
-        
         contentView.backgroundColor = .secondarySystemBackground
         contentView.addSubview(textlabel)
         textlabel.pin(to: contentView, [.left: 16, .top: 16, .right: 16, .bottom: 16])

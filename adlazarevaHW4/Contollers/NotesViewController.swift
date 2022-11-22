@@ -22,7 +22,6 @@ final class NotesViewController: UIViewController{
         if let data = defaults.object(forKey: "notes") as? Data {
                     dataSource = try! JSONDecoder().decode([ShortNote].self, from: data)
                 }
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,11 +32,9 @@ final class NotesViewController: UIViewController{
     private func setupView(){
         setupTableView()
         setupNavBar()
-        
     }
     
     private func setupTableView() {
-        
         tableView.register(NoteCell.self, forCellReuseIdentifier: NoteCell.reuseIdentifier)
         tableView.register(AddNoteCell.self, forCellReuseIdentifier: AddNoteCell.reuseIdentifier)
         
@@ -103,6 +100,7 @@ extension NotesViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:

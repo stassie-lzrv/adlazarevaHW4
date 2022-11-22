@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811F92FD292D70EA00CD8682 /* AddNoteCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F92FC292D70EA00CD8682 /* AddNoteCellExtension.swift */; };
 		8158EC6B292C10CD009ECAB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC6A292C10CD009ECAB5 /* AppDelegate.swift */; };
 		8158EC6D292C10CD009ECAB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC6C292C10CD009ECAB5 /* SceneDelegate.swift */; };
 		8158EC74292C10D1009ECAB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8158EC73292C10D1009ECAB5 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		811F92FC292D70EA00CD8682 /* AddNoteCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCellExtension.swift; sourceTree = "<group>"; };
 		8158EC67292C10CD009ECAB5 /* adlazarevaHW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adlazarevaHW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8158EC6A292C10CD009ECAB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8158EC6C292C10CD009ECAB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		811F92FB292D708A00CD8682 /* NotesExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				811F92FC292D70EA00CD8682 /* AddNoteCellExtension.swift */,
+			);
+			path = NotesExtensions;
+			sourceTree = "<group>";
+		};
 		8158EC5E292C10CD009ECAB5 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 		8158EC69292C10CD009ECAB5 /* adlazarevaHW4 */ = {
 			isa = PBXGroup;
 			children = (
+				811F92FB292D708A00CD8682 /* NotesExtensions */,
 				81CB213A292D011D009F9360 /* UIView */,
 				81CB2136292D00D4009F9360 /* ColorPaletteView */,
 				81CB212F292CFFA9009F9360 /* ColorExtensions */,
@@ -215,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811F92FD292D70EA00CD8682 /* AddNoteCellExtension.swift in Sources */,
 				81CB2133292D0002009F9360 /* ColorPaletteViewExtension.swift in Sources */,
 				8158EC80292C12C0009ECAB5 /* NotesViewController.swift in Sources */,
 				81CB2138292D00EA009F9360 /* ColorPaletteView.swift in Sources */,
