@@ -18,6 +18,10 @@ final class NotesViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        let defaults = UserDefaults.standard
+        if let data = defaults.object(forKey: "notes") as? Data {
+                    dataSource = try! JSONDecoder().decode([ShortNote].self, from: data)
+                }
         
     }
     
@@ -65,8 +69,14 @@ final class NotesViewController: UIViewController{
     private func handleDelete(indexPath: IndexPath){
         dataSource.remove(at: indexPath.row)
         tableView.reloadData()
+        UserDefaults.standard.removeObject(forKey: "notes")
+        let defaults = UserDefaults.standard
+                if let encoded = try? JSONEncoder().encode(dataSource) {
+                    defaults.set(encoded, forKey: "notes")
+                }
     }
 }
+
 
 extension NotesViewController: UITableViewDelegate {
     
@@ -127,6 +137,10 @@ NoteCell.reuseIdentifier, for: indexPath) as? NoteCell {
 extension NotesViewController: AddNoteDelegate{
     func newNoteAdded(note : ShortNote){
         dataSource.insert(note, at: 0)
+        let defaults = UserDefaults.standard
+                if let encoded = try? JSONEncoder().encode(dataSource) {
+                    defaults.set(encoded, forKey: "notes")
+                }
         tableView.reloadData()
     }
 }
