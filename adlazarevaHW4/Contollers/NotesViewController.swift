@@ -12,8 +12,6 @@ import UIKit
 
 final class NotesViewController: UIViewController{
     
-    
-    
     private let tableView = UITableView(frame: .zero, style: .insetGrouped)
     private var dataSource = [ShortNote]()
     
@@ -53,11 +51,16 @@ final class NotesViewController: UIViewController{
     private func setupNavBar(){
         self.title = "Notes"
         let closeButton = UIButton(type: .close)
-       /*closeButton.addTarget(self, action: #selector(dismissViewController(_:)),
-        for: .touchUpInside)*/
+       closeButton.addTarget(self, action: #selector(dismissViewController(_:)),
+        for: .touchUpInside)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView:
         closeButton)
     }
+    
+    @objc
+        private func dismissViewController(_ sender: UIButton) {
+            dismiss(animated: true, completion: nil)
+        }
     
     private func handleDelete(indexPath: IndexPath){
         dataSource.remove(at: indexPath.row)

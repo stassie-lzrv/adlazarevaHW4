@@ -14,7 +14,7 @@ final class AddNoteCell: UITableViewCell {
     private var textView = UITextView()
     public var addButton = UIButton()
     
-    var delegate: UITableViewDelegate?
+    var delegate: AddNoteDelegate?
     // MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -32,6 +32,7 @@ final class AddNoteCell: UITableViewCell {
     }
     
     private func setupView() {
+        textView.delegate = self
         textView.font = .systemFont(ofSize: 14, weight: .regular)
         textView.textColor = .tertiaryLabel
         textView.backgroundColor = .clear
@@ -58,9 +59,25 @@ for: .touchUpInside)
         contentView.backgroundColor = .systemGray5
     }
     
+    private func clearTextView(){
+        textView.selectAll(textView)
+        if let range = textView.selectedTextRange{
+            textView.replace(range, withText: "")
+        }
+    }
+    
     @objc
     private func addButtonTapped(_ sender: UIButton) {
-        
-        
+        delegate?.newNoteAdded(note: ShortNote(text: textView.text))
+        clearTextView()
+                               
+    }
+}
+
+
+extension AddNoteCell: UITextViewDelegate {
+    public func textViewDidChange(_ textView: UITextView) {
+        addButton.isEnabled = !textView.text.isEmpty
+        addButton.alpha = addButton.isEnabled ? 0.85 : 0.5
     }
 }

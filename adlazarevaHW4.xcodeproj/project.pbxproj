@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8158EC6B292C10CD009ECAB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC6A292C10CD009ECAB5 /* AppDelegate.swift */; };
 		8158EC6D292C10CD009ECAB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC6C292C10CD009ECAB5 /* SceneDelegate.swift */; };
-		8158EC6F292C10CD009ECAB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC6E292C10CD009ECAB5 /* ViewController.swift */; };
 		8158EC74292C10D1009ECAB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8158EC73292C10D1009ECAB5 /* Assets.xcassets */; };
 		8158EC77292C10D1009ECAB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8158EC75292C10D1009ECAB5 /* LaunchScreen.storyboard */; };
 		8158EC80292C12C0009ECAB5 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC7F292C12C0009ECAB5 /* NotesViewController.swift */; };
@@ -18,13 +17,18 @@
 		8158EC87292C17CF009ECAB5 /* UIView+Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC86292C17CF009ECAB5 /* UIView+Pin.swift */; };
 		8158EC89292C1839009ECAB5 /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC88292C1839009ECAB5 /* AddNoteCell.swift */; };
 		8158EC8C292C2647009ECAB5 /* AddNoteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC8B292C2647009ECAB5 /* AddNoteDelegate.swift */; };
+		81CB212B292CFEFA009F9360 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CB212A292CFEFA009F9360 /* WelcomeViewController.swift */; };
+		81CB212E292CFF66009F9360 /* ColorChangeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CB212D292CFF66009F9360 /* ColorChangeProtocol.swift */; };
+		81CB2131292CFFD0009F9360 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CB2130292CFFD0009F9360 /* CALayer.swift */; };
+		81CB2133292D0002009F9360 /* ColorPaletteViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CB2132292D0002009F9360 /* ColorPaletteViewExtension.swift */; };
+		81CB2135292D0020009F9360 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CB2134292D0020009F9360 /* UIColorExtension.swift */; };
+		81CB2138292D00EA009F9360 /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CB2137292D00EA009F9360 /* ColorPaletteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8158EC67292C10CD009ECAB5 /* adlazarevaHW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adlazarevaHW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8158EC6A292C10CD009ECAB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8158EC6C292C10CD009ECAB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8158EC6E292C10CD009ECAB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8158EC73292C10D1009ECAB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8158EC76292C10D1009ECAB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8158EC78292C10D1009ECAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +38,12 @@
 		8158EC86292C17CF009ECAB5 /* UIView+Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Pin.swift"; sourceTree = "<group>"; };
 		8158EC88292C1839009ECAB5 /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
 		8158EC8B292C2647009ECAB5 /* AddNoteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteDelegate.swift; sourceTree = "<group>"; };
+		81CB212A292CFEFA009F9360 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		81CB212D292CFF66009F9360 /* ColorChangeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeProtocol.swift; sourceTree = "<group>"; };
+		81CB2130292CFFD0009F9360 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		81CB2132292D0002009F9360 /* ColorPaletteViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewExtension.swift; sourceTree = "<group>"; };
+		81CB2134292D0020009F9360 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		81CB2137292D00EA009F9360 /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +76,14 @@
 		8158EC69292C10CD009ECAB5 /* adlazarevaHW4 */ = {
 			isa = PBXGroup;
 			children = (
+				81CB213A292D011D009F9360 /* UIView */,
+				81CB2136292D00D4009F9360 /* ColorPaletteView */,
+				81CB212F292CFFA9009F9360 /* ColorExtensions */,
 				8158EC8A292C2616009ECAB5 /* Protocols */,
-				8158EC81292C16AD009ECAB5 /* Views */,
+				8158EC81292C16AD009ECAB5 /* NotesView */,
 				8158EC7E292C1277009ECAB5 /* Contollers */,
 				8158EC6A292C10CD009ECAB5 /* AppDelegate.swift */,
 				8158EC6C292C10CD009ECAB5 /* SceneDelegate.swift */,
-				8158EC6E292C10CD009ECAB5 /* ViewController.swift */,
 				8158EC73292C10D1009ECAB5 /* Assets.xcassets */,
 				8158EC75292C10D1009ECAB5 /* LaunchScreen.storyboard */,
 				8158EC78292C10D1009ECAB5 /* Info.plist */,
@@ -83,27 +95,54 @@
 			isa = PBXGroup;
 			children = (
 				8158EC7F292C12C0009ECAB5 /* NotesViewController.swift */,
+				81CB212A292CFEFA009F9360 /* WelcomeViewController.swift */,
 			);
 			path = Contollers;
 			sourceTree = "<group>";
 		};
-		8158EC81292C16AD009ECAB5 /* Views */ = {
+		8158EC81292C16AD009ECAB5 /* NotesView */ = {
 			isa = PBXGroup;
 			children = (
 				8158EC82292C16C3009ECAB5 /* ShortNote.swift */,
 				8158EC84292C171A009ECAB5 /* NoteCell.swift */,
-				8158EC86292C17CF009ECAB5 /* UIView+Pin.swift */,
 				8158EC88292C1839009ECAB5 /* AddNoteCell.swift */,
 			);
-			path = Views;
+			path = NotesView;
 			sourceTree = "<group>";
 		};
 		8158EC8A292C2616009ECAB5 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				8158EC8B292C2647009ECAB5 /* AddNoteDelegate.swift */,
+				81CB212D292CFF66009F9360 /* ColorChangeProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		81CB212F292CFFA9009F9360 /* ColorExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				81CB2130292CFFD0009F9360 /* CALayer.swift */,
+				81CB2132292D0002009F9360 /* ColorPaletteViewExtension.swift */,
+				81CB2134292D0020009F9360 /* UIColorExtension.swift */,
+			);
+			path = ColorExtensions;
+			sourceTree = "<group>";
+		};
+		81CB2136292D00D4009F9360 /* ColorPaletteView */ = {
+			isa = PBXGroup;
+			children = (
+				81CB2137292D00EA009F9360 /* ColorPaletteView.swift */,
+			);
+			path = ColorPaletteView;
+			sourceTree = "<group>";
+		};
+		81CB213A292D011D009F9360 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				8158EC86292C17CF009ECAB5 /* UIView+Pin.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,13 +215,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CB2133292D0002009F9360 /* ColorPaletteViewExtension.swift in Sources */,
 				8158EC80292C12C0009ECAB5 /* NotesViewController.swift in Sources */,
-				8158EC6F292C10CD009ECAB5 /* ViewController.swift in Sources */,
+				81CB2138292D00EA009F9360 /* ColorPaletteView.swift in Sources */,
+				81CB212B292CFEFA009F9360 /* WelcomeViewController.swift in Sources */,
 				8158EC6B292C10CD009ECAB5 /* AppDelegate.swift in Sources */,
 				8158EC89292C1839009ECAB5 /* AddNoteCell.swift in Sources */,
 				8158EC85292C171A009ECAB5 /* NoteCell.swift in Sources */,
+				81CB2135292D0020009F9360 /* UIColorExtension.swift in Sources */,
 				8158EC6D292C10CD009ECAB5 /* SceneDelegate.swift in Sources */,
+				81CB212E292CFF66009F9360 /* ColorChangeProtocol.swift in Sources */,
 				8158EC8C292C2647009ECAB5 /* AddNoteDelegate.swift in Sources */,
+				81CB2131292CFFD0009F9360 /* CALayer.swift in Sources */,
 				8158EC87292C17CF009ECAB5 /* UIView+Pin.swift in Sources */,
 				8158EC83292C16C3009ECAB5 /* ShortNote.swift in Sources */,
 			);

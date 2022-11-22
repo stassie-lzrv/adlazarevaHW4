@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol AddNoteDelegate{
+protocol AddNoteDelegate : AnyObject{
     func newNoteAdded(note : ShortNote)
 }
