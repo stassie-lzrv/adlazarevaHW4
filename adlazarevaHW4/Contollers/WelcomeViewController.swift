@@ -33,7 +33,6 @@ class WelcomeViewController: UIViewController, ColorChangeProtocol{
     private var value: Int = 0
     private let incrementButton = UIButton(type: .system)
     let colorPaletteView = ColorPaletteView()
-    let notesView = NotesViewController()
     var buttonsSV = UIStackView()
     let noteController = NotesViewController()
     
